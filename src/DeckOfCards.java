@@ -1,4 +1,4 @@
-public class DeckOfCards {
+public class DeckOfCards extends Players {
     String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
     String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "King", "Queen", "Ace"};
     String[] deck = new String[52];
@@ -11,7 +11,9 @@ public class DeckOfCards {
         }
         public static void main(String[] args) {
             DeckOfCards deckOfCards = new DeckOfCards();
-            deckOfCards.cardCombination();
+            Players players = new Players();
+           // deckOfCards.cardCombination();
+            players.getPlayers();
     }
 }
 
